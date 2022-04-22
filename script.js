@@ -10,17 +10,16 @@ if(speechSynthesis !== undefined){
 }
 
 btnSpeak.addEventListener('click', ()=> {
-    var toSpeak = new SpeechSynthesisUtterance(txtInput.value);
+    if(document.getSelection){
+        var text = document.getSelection().toString();
+    }
+    var toSpeak = new SpeechSynthesisUtterance(text);
     var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
     voices.forEach((voice)=>{
         if(voice.name === selectedVoiceName){
             toSpeak.voice = voice;
         }
     });
-    if(document.getSelection){
-        var text = document.getSelection().toString();
-        text.innerHTML = txtInput;
-    }
 
     synth.speak(toSpeak);
 });
