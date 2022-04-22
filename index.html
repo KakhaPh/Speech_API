@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+    #btnSpeak{
+        border: solid 1px gray;
+        background-color: rgb(255, 255, 255);
+        padding: 7px;
+        outline: none;
+        width: 100px;
+        cursor: pointer;
+    }
+    #btnSpeak:hover{
+        background-color: lightgray;
+        transition: .5s;
+    }
+    </style>
 </head>
 <body>
-    <select id='voiceList' style="display: none;"></select> <br><br>
-    <input id='txtInput' type="hidden" /> <br><br>    
+    <select id='voiceList' style="display: none;"></select>
+    <input id='txtInput' type="hidden" /> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam harum vel omnis eos officiis! Rem enim nobis qui totam perferendis laboriosam soluta accusamus nostrum voluptatibus, recusandae debitis sequi hic?</p>
 
-    <pre>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Nisi temporibus dolor maiores ab facilis eius tempore 
-    explicabo aliquam error, vel sapiente porro consequatur 
-    eveniet magnam. Quia inventore laudantium aliquam veniam?
-    </pre>
-
-    <button id='btnSpeak'>Speak!</button>
+    <button id='btnSpeak'>Listen</button>
     <script src="script.js"></script>
 </body>
 </html>
