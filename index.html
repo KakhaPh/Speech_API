@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=3EkgiW73"></script>
     <style>
     #btnSpeak{
         border: solid 1px gray;
         background-color: rgb(255, 255, 255);
         padding: 7px;
+        position: absolute;
         outline: none;
         width: 100px;
         cursor: pointer;
+        display: none;
     }
     #btnSpeak:hover{
         background-color: lightgray;
@@ -22,9 +23,33 @@
     </style>
 </head>
 <body>
-    <select id='voiceList' style="display: none;"></select>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam harum vel omnis eos officiis! Rem enim nobis qui totam perferendis laboriosam soluta accusamus nostrum voluptatibus, recusandae debitis sequi hic?</p>
-    <button id='btnSpeak' onclick="textSpeak()">Listen</button>
+    <!-- ALTSCRIPT -->
+    <!-- <p>Hello dear!!!</p>
+    <button id='btnSpeak' onclick="speak()" style="display: none;">Listen</button>
     <script src="altscript.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=3EkgiW73"></script> -->
+
+    <!-- SCRIPT -->
+    Select Voice: <select id='voiceList'></select> <br><br>
+<pre>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+eum minima, saepe optio cupiditate ipsam, pariatur nihil aliquam moll
+itia consequatur obcaecati, blanditiis et? A nihil inventore, magnam
+quos quo facilis!Lorem Lorem ipsum dolor sit amet consectetur adipis
+icing elit. Laudantium, eius. Quia quaerat aperiam blanditiis nemo o
+mnis id non, quae, unde porro accusamus, suscipit expedita adipisci d
+olor! Rem corporis odit porro. Lorem ipsum dolor sit amet consectetur
+adipisicing elit. Distinctio facere nam omnis, expedita vitae sunt r
+em, praesentium neque necessitatibus eveniet porro sequi cupiditate c
+ommodi culpa dignissimos officiis id quia adipisci?Lorem ipsum dolor 
+sit amet consectetur adipisicing elit. Optio iste debitis commodi imp
+edit corporis tenetur error doloribus labore hic beatae, distinctio a
+d, fugit quasi ipsa quis aliquid ullam sed aliquam?Lorem ipsum dolor 
+sit amet consectetur adipisicing elit. Quaerat voluptatum optio cum o
+fficia sed, in sit sequi saepe nostrum vero repellendus ipsam necessi
+tatibus ex amet alias aliquam dolores. Dolore, aperiam.
+</pre>
+    <button id='btnSpeak'>Speak!</button>
+    <script src="script.js"></script>
 </body>
 </html>
