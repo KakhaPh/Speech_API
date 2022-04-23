@@ -7,10 +7,10 @@ function textSpeak() {
     responsiveVoice.speak(text);
 }
 
-function listen() {
-    if(selectedOption){
-        let btn = document.createElement("button");
-        btn.innerHTML = "Click Me";
-        document.body.appendChild(btn);
-    }
-}
+// function listen() {
+//     if(selectedOption){
+//         let btn = document.createElement("button");
+//         btn.innerHTML = "Click Me";
+//         document.body.appendChild(btn);
+//     }
+// }
