@@ -1,4 +1,3 @@
-var txtInput = document.querySelector('#txtInput');
 var voiceList = document.querySelector('#voiceList');
 var btnSpeak = document.querySelector('#btnSpeak');
 var synth = window.speechSynthesis;
